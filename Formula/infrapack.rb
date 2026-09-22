@@ -11,8 +11,8 @@
 class Infrapack < Formula
   desc "Local development infrastructure, one command: databases, brokers, caches with web UIs"
   homepage "https://github.com/Mostly-Works-Studio/infrapack"
-  url "https://github.com/Mostly-Works-Studio/infrapack/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "c3fc1b176c14c257e063c6d18fb02bfb57278d0850ad0b1d76d3d68ce6cd7201"
+  url "https://github.com/Mostly-Works-Studio/infrapack/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "54eb8ebf08ae7a09f1b7d25c145236bd3a07a22307cdb417903cd6090140cfb7"
   license "MIT"
 
   # Pure bash; Docker is found at runtime and reported by `infrapack doctor`.
