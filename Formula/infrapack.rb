@@ -2,7 +2,8 @@
 # github.com/Mostly-Works-Studio/homebrew-tap as Formula/infrapack.rb;
 # scripts/release.sh fills in the version and sha256 and copies it there.
 #
-#   brew install mostly-works-studio/tap/infrapack
+#   brew tap mostly-works-studio/tap && brew trust mostly-works-studio/tap
+#   brew install infrapack
 #
 # Written to homebrew-core standards (source install, license, test block, no
 # explicit version) so the same file can be submitted to Homebrew/homebrew-core
@@ -10,8 +11,8 @@
 class Infrapack < Formula
   desc "Local development infrastructure, one command: databases, brokers, caches with web UIs"
   homepage "https://github.com/Mostly-Works-Studio/infrapack"
-  url "https://github.com/Mostly-Works-Studio/infrapack/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "6807966e8baa52db9a1dba9c25002dde964d210674f8b601d3db201bd86a27c8"
+  url "https://github.com/Mostly-Works-Studio/infrapack/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "c3fc1b176c14c257e063c6d18fb02bfb57278d0850ad0b1d76d3d68ce6cd7201"
   license "MIT"
 
   # Pure bash; Docker is found at runtime and reported by `infrapack doctor`.
