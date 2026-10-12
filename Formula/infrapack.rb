@@ -11,8 +11,8 @@
 class Infrapack < Formula
   desc "Local development infrastructure, one command: databases, brokers, caches with web UIs"
   homepage "https://github.com/Mostly-Works-Studio/infrapack"
-  url "https://github.com/Mostly-Works-Studio/infrapack/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "54eb8ebf08ae7a09f1b7d25c145236bd3a07a22307cdb417903cd6090140cfb7"
+  url "https://github.com/Mostly-Works-Studio/infrapack/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "6d4d39483410645a7e2a0f38bb0066e8d29891bb2668848573a1750fe03a26bf"
   license "MIT"
 
   # Pure bash; Docker is found at runtime and reported by `infrapack doctor`.
@@ -28,7 +28,9 @@ class Infrapack < Formula
       Then:
         infrapack catalog            # what can be installed
         infrapack install postgres   # add one and start it
-        infrapack open               # the web console
+        infrapack open               # the console
+      The first command also adds the InfraPack app (Spotlight, Dock) and, on
+      macOS with the Command Line Tools, the InfraPack menu bar item.
     EOS
   end
 
